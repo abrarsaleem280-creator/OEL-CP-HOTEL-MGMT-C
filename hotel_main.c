@@ -31,7 +31,7 @@ void checkOutGuest();
 void saveToFile();
 void loadFromFile();
 void generateReport();
-void setRoomTypeAndPrice(int i); // helper functions used again and again
+void setRoomTypeAndPrice(int i);
 void printReservation(int i);
     // the real variables (validation.h only says "extern" about them)
     struct Reservation reservations[MAX];
