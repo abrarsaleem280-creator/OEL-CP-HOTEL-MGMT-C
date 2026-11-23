@@ -37,49 +37,6 @@ void printReservation(int i);
     struct Reservation reservations[MAX];
     int count = 0;
     int nextID = 1;
-
-// ---------- ADMIN LOGIN ----------
-
-void removeNewline(char *s)
-{
-    s[strcspn(s, "\n")] = '\0';
-}
-
-int adminLogin(void)
-{
-    char username[50], password[50];
-    int attempts = 0;
-
-    while (attempts < MAX_LOGIN_ATTEMPTS)
-    {
-        printf("\n=========== ADMIN LOGIN ===========\n");
-
-        printf("Username: ");
-        if (fgets(username, sizeof(username), stdin) == NULL)
-            return 0;
-        removeNewline(username);
-
-        printf("Password: ");
-        if (fgets(password, sizeof(password), stdin) == NULL)
-            return 0;
-        removeNewline(password);
-
-        if (strcmp(username, ADMIN_USER) == 0 &&
-            strcmp(password, ADMIN_PASS) == 0)
-        {
-            printf("\nLogin successful! Welcome, Admin.\n");
-            return 1;
-        }
-
-        attempts++;
-        printf("Wrong credentials ! Try again: %d\n",
-               MAX_LOGIN_ATTEMPTS - attempts);
-    }
-
-    printf("\n bye bye, you are not the admin \n");
-    return 0;
-}
-
 // ---------- HELPER FUNCTIONS helping us not to type again n again (room type and price, print reservation) ----------
 
 // sets room type and price per night from the room number (used in add and update)
