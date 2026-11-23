@@ -11,7 +11,7 @@
 
 #include <string.h>
 
-#include "validation.h"   // our own header file (MAX, struct, validation functions)
+#include "validation.h"   // our own header file (MAX, struct, validation function )
 
 // ---------- ADMIN LOGIN SETTINGS ----------
 #define ADMIN_USER "RECEPTIONIST"
