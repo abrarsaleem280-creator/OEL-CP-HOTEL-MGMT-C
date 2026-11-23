@@ -15,7 +15,7 @@
 
 // ---------- ADMIN LOGIN SETTINGS ----------
 #define ADMIN_USER "RECEPTIONIST"
-#define ADMIN_PASS "Admin@123"     // Apna strong password yahan likho
+#define ADMIN_PASS "Admin@123"     
 #define MAX_LOGIN_ATTEMPTS 3
 
 void displayMenu(); // each function for a different purpose 
