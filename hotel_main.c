@@ -5,6 +5,7 @@
  * In program: to manage hotel room reservations, guest check-ins/check-outs, and billing using file I/O.
  * Roll Numbers: [CS-043] [CS-036] [CS-044] [CS-046]
  * Section/Group: [SECTION A ( FE 2026 )]
+ * FIRST YEAR FALL SEMESTER CIS STUDENTS 
  */
 
 #include <stdio.h>
