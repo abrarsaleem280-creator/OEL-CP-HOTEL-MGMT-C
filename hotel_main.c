@@ -80,7 +80,7 @@ int adminLogin(void)
     return 0;
 }
 
-// ---------- HELPER FUNCTIONS (room type and price, print reservation) ----------
+// ---------- HELPER FUNCTIONS helping us not to type again n again (room type and price, print reservation) ----------
 
 // sets room type and price per night from the room number (used in add and update)
 void setRoomTypeAndPrice(int i)
